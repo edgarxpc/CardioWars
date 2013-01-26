@@ -68,7 +68,7 @@ public class SplineController : MonoBehaviour {
 	float resumeSpeed;
 
 	void OnGUI() {
-		GUI.Box(new Rect(Screen.width - 75, 25, 75, 20), rigidbody.velocity.ToString());
+		//GUI.Box(new Rect(Screen.width - 75, 25, 75, 20), rigidbody.velocity.ToString());
 	}
 	public virtual void Start() {
 		if(gravSpline) {			//If the user has specified a gravity spline, set it up
