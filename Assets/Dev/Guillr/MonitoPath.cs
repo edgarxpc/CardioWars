@@ -13,8 +13,8 @@ public class MonitoPath : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//transform.Translate();
-		Vector3 vec = this.transform.position;
-		vec.x -= (float)((0.8 * Time.deltaTime));
-		this.transform.position = vec;
+		//Vector3 vec = this.transform.position;
+		//vec.x -= (float)((0.8 * Time.deltaTime));
+		//this.transform.position = vec;
 	}
 }
