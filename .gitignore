@@ -6,6 +6,8 @@ Temp/*
 Library/*
 Build/*
 Obj/*
+Assets/Orthello/
+Assets/Orthello.meta
 
 # MSBuild projects for the game
 *.csproj
