@@ -9,7 +9,7 @@ public class LevelObject : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//GameObject obj = (GameObject)Instantiate(gobjGlobuloRojo, new Vector3(12, 0, 0), Quaternion.identity);
-		GameObject obj = (GameObject)Instantiate(gobjGlobuloRojo, new Vector3(12, 0, 0), Quaternion.identity);
+		GameObject obj = (GameObject)Instantiate(gobjGlobuloRojo, new Vector3(15, 5, 0), Quaternion.identity);
 		
 
 		Debug.Log("Success");
