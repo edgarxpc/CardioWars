@@ -232,47 +232,47 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d5babc1b7b3f401aa32b828892605bb, type: 3}
   m_Name: 
   objectPrototypes:
-  - name: 537072697465
+  - name: Sprite
     prototype: {fileID: 100000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
-  - name: 46696c6c6564537072697465
+  - name: FilledSprite
     prototype: {fileID: 100000, guid: 8d62bcfcffb1ec045b3871955951bece, type: 2}
-  - name: 416e696d6174696e67537072697465
+  - name: AnimatingSprite
     prototype: {fileID: 100000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
-  - name: 416e696d6174696f6e
+  - name: Animation
     prototype: {fileID: 100000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
-  - name: 5370726974655368656574
+  - name: SpriteSheet
     prototype: {fileID: 100000, guid: 83f7fb59a87e1e840b645c3d4be771a3, type: 2}
-  - name: 4772616469656e74537072697465
+  - name: GradientSprite
     prototype: {fileID: 100000, guid: 192bf20f01aed934db2bd1ca41586910, type: 2}
-  - name: 54657874537072697465
+  - name: TextSprite
     prototype: {fileID: 100000, guid: 3a751d0f6c428c843a1848acdc33859f, type: 2}
-  - name: 5363616c6539537072697465
+  - name: Scale9Sprite
     prototype: {fileID: 100000, guid: f237d126b36f96d4cbb931a9cd256e6b, type: 2}
   materials:
-  - name: 736f6c6964
+  - name: solid
     fieldColorTint: 
     fieldAlphaChannel: 
     fieldAlphaColor: 
     material: {fileID: 2100000, guid: 0689fa8d5b1a444d38245499db0606ca, type: 2}
-  - name: 7472616e73706172656e74
+  - name: transparent
     fieldColorTint: 
     fieldAlphaChannel: 
     fieldAlphaColor: 
     material: {fileID: 2100000, guid: efc9e2b7f726042628f95283e95c71ea, type: 2}
-  - name: 6164646974697665
+  - name: additive
     fieldColorTint: 
     fieldAlphaChannel: 
     fieldAlphaColor: 
     material: {fileID: 2100000, guid: 1ba717d70d73142c193d2495a4bc382b, type: 2}
-  - name: 74696e74
-    fieldColorTint: 5f456d6973436f6c6f72
+  - name: tint
+    fieldColorTint: _EmisColor
     fieldAlphaChannel: 
     fieldAlphaColor: 
     material: {fileID: 2100000, guid: 7ad68cdc562564964ad1bc48c61a290e, type: 2}
-  - name: 616c706861
-    fieldColorTint: 5f436f6c6f72
+  - name: alpha
+    fieldColorTint: _Color
     fieldAlphaChannel: 
-    fieldAlphaColor: 5f436f6c6f72
+    fieldAlphaColor: _Color
     material: {fileID: 2100000, guid: 13b802328ac3e4c3f8f13bde888ac538, type: 2}
   _world: 0
   deactivatePrototypes: 1
@@ -429,6 +429,7 @@ MonoBehaviour:
   _movementTarget: {fileID: 0}
   _rotationTarget: {fileID: 0}
   _worldBounds:
+    serializedVersion: 2
     x: 0
     y: 0
     width: 0
@@ -437,11 +438,7 @@ MonoBehaviour:
   _pixelPerfectResolution: {x: 1024, y: 768}
   customSize: 12
   drawGizmos: 1
-  gizmosColor:
-    r: 1
-    g: .921568632
-    b: .0156862754
-    a: 1
+  gizmosColor: {r: 1, g: .921568632, b: .0156862754, a: 1}
   cameraDepth: -1000
   cameraRange: 2001
 --- !u!1 &2102080478
