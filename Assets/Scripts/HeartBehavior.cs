@@ -67,6 +67,7 @@ public class HeartBehavior : MonoBehaviour
             {
                 elapsedTimeForBeat = 0;
                 Animation.Play(state.ToString());
+				GameState.Audio.playHearthBeat1();
             }
 
             elapsedTimeForAttack += Time.deltaTime;

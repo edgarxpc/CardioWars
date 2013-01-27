@@ -29,10 +29,15 @@ public class GameState : MonoBehaviour
 
 	public static Tower TowerSelected { get; set; }
 
+	public static AudioManager Audio { get; set; }
+
+
     private void Awake()
     {
         WaveNumber = InitialWave;
         AvailableMoney = InitialMoney;
+		Audio = GetComponent<AudioManager>();
+		GameState.Audio.playThemeGame();
 
         DontDestroyOnLoad(this);
     }

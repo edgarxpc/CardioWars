@@ -7057,6 +7057,42 @@ MeshFilter:
   m_PrefabInternal: {fileID: 1445841212}
   m_GameObject: {fileID: 666699547}
   m_Mesh: {fileID: 4300000, guid: 14ad51af42778ad41b2647e823d24cbb, type: 3}
+--- !u!21 &680080714
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OTMaterial-transparent
+  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: e7f0c1d2564a6cc42ab5dc34ce348356, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
 --- !u!1 &687330657
 GameObject:
   m_ObjectHideFlags: 0
@@ -7697,6 +7733,7 @@ GameObject:
   - 4: {fileID: 735876052}
   - 114: {fileID: 735876053}
   - 114: {fileID: 735876054}
+  - 114: {fileID: 735876055}
   m_Layer: 0
   m_Name: LevelBase
   m_TagString: Untagged
@@ -7748,6 +7785,18 @@ MonoBehaviour:
   m_Name: 
   InitialWave: 1
   InitialMoney: 100
+--- !u!114 &735876055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735876051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3824f6778fda5064095cb7224652d5c9, type: 3}
+  m_Name: 
+  audio: {fileID: 1572590057}
+  clip1: {fileID: 8300000, guid: 745efffe6c90fee449a1db4308985935, type: 3}
 --- !u!1 &745047798
 GameObject:
   m_ObjectHideFlags: 0
@@ -12963,6 +13012,45 @@ Prefab:
   m_RootGameObject: {fileID: 932051078}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &1381809946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1381809947}
+  - 114: {fileID: 1381809949}
+  m_Layer: 0
+  m_Name: AudioComponent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1381809947
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1381809946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.80779934, y: -.794578671, z: .0693054199}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &1381809949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1381809946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3824f6778fda5064095cb7224652d5c9, type: 3}
+  m_Name: 
+  audio: {fileID: 0}
+  clip1: {fileID: 0}
 --- !u!1 &1391812243
 GameObject:
   m_ObjectHideFlags: 0
@@ -14094,7 +14182,11 @@ Prefab:
     - target: {fileID: 2300000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
+<<<<<<< Updated upstream
       objectReference: {fileID: 2110164019}
+=======
+      objectReference: {fileID: 680080714}
+>>>>>>> Stashed changes
     - target: {fileID: 3300000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: m_Mesh
       value: 
@@ -14294,6 +14386,7 @@ GameObject:
   - 92: {fileID: 1572590054}
   - 124: {fileID: 1572590053}
   - 81: {fileID: 1572590052}
+  - 82: {fileID: 1572590057}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14361,6 +14454,62 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!82 &1572590057
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572590051}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1585463766
 GameObject:
   m_ObjectHideFlags: 0
@@ -15150,7 +15299,11 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
+<<<<<<< Updated upstream
   - {fileID: 2110164019}
+=======
+  - {fileID: 680080714}
+>>>>>>> Stashed changes
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0

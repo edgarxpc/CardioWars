@@ -25,6 +25,8 @@ public class BulletBehavior : MonoBehaviour {
 	void OnTriggerEnter(Collider collider) {
 		if (collider.GetComponent<Rigidbody>() == target.GetComponent<Rigidbody>())
 		{
+
+			GameState.Audio.playShootTumor();
 			Destroy(this.gameObject);
 		}
 	}
