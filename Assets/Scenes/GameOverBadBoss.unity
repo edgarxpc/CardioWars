@@ -502,7 +502,7 @@ MonoBehaviour:
   _materialReference: transparent
   _tintColor: {r: 1, g: 1, b: 1, a: 1}
   _alpha: 1
-  _image: {fileID: 2800000, guid: 824c3bc3a68e13f4693275cfa533c22f, type: 3}
+  _image: {fileID: 2800000, guid: 8b7ae643e822a584e94944d9bf7d769a, type: 3}
   sizeImages: []
   _frameIndex: 0
   _frameName: 
@@ -522,7 +522,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 1653265379}
+  - {fileID: 2049207412}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -626,42 +626,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!21 &1653265379
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: OTMaterial-transparent
-  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: 824c3bc3a68e13f4693275cfa533c22f, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _InvFade
-        second: 1
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _TintColor
-        second: {r: .5, g: .5, b: .5, a: .5}
-      data:
-        first:
-          name: _EmisColor
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
 --- !u!1 &1685103895
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +752,7 @@ Prefab:
     - target: {fileID: 2300000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1653265379}
+      objectReference: {fileID: 2049207412}
     - target: {fileID: 100000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: m_Name
       value: Sprite (id=-4682)
@@ -796,7 +760,7 @@ Prefab:
     - target: {fileID: 11400000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: _image
       value: 
-      objectReference: {fileID: 2800000, guid: 824c3bc3a68e13f4693275cfa533c22f, type: 3}
+      objectReference: {fileID: 2800000, guid: 8b7ae643e822a584e94944d9bf7d769a, type: 3}
     - target: {fileID: 11400000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: _size.x
       value: 32
@@ -822,6 +786,42 @@ Prefab:
   m_RootGameObject: {fileID: 1464487352}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!21 &2049207412
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OTMaterial-transparent
+  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 8b7ae643e822a584e94944d9bf7d769a, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
 --- !u!1001 &2097426160
 Prefab:
   m_ObjectHideFlags: 0
