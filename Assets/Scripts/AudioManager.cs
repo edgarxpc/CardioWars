@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour {
 	public AudioClip ShootWorm;
 	public AudioClip ShootTumor;
 	public AudioSource Source;
+	
+	public AudioClip SceneWin;
 
 	public void playHearthBeat1()
 	{
@@ -24,6 +26,13 @@ public class AudioManager : MonoBehaviour {
 	public void playThemeIntro()
 	{
 		Source.clip = ThemeIntro;
+		Source.loop = true;
+		Source.Play();
+	}
+	
+	public void playSceneWin()
+	{
+		Source.clip = SceneWin;
 		Source.loop = true;
 		Source.Play();
 	}

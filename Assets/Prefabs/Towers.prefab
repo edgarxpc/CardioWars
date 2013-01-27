@@ -223,8 +223,8 @@ MonoBehaviour:
   bullet: {fileID: 100000, guid: f102feee64a4f4f4b92a1172ac47b06f, type: 2}
   missile: {fileID: 0}
   attackRange: 0
-  damage: 5
-  fireRateOnSeconds: .5
+  damage: 40
+  fireRateOnSeconds: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -238,7 +238,7 @@ MonoBehaviour:
   bullet: {fileID: 100000, guid: f102feee64a4f4f4b92a1172ac47b06f, type: 2}
   missile: {fileID: 0}
   attackRange: 0
-  damage: 5
+  damage: 10
   fireRateOnSeconds: .5
 --- !u!114 &11400006
 MonoBehaviour:
@@ -253,8 +253,8 @@ MonoBehaviour:
   bullet: {fileID: 100000, guid: f102feee64a4f4f4b92a1172ac47b06f, type: 2}
   missile: {fileID: 0}
   attackRange: 0
-  damage: 5
-  fireRateOnSeconds: .5
+  damage: 25
+  fireRateOnSeconds: .800000012
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -158,7 +158,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 290824840}
+  - {fileID: 609721736}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -183,7 +183,7 @@ Transform:
   m_LocalScale: {x: 32, y: 24, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!21 &290824840
+--- !u!21 &609721736
 Material:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -358,6 +358,7 @@ MonoBehaviour:
   ShootWorm: {fileID: 8300000, guid: cbcbfae92a879e148ae933c083f681a8, type: 3}
   ShootTumor: {fileID: 8300000, guid: 65aeacf63eedc0f40809299be415d963, type: 3}
   Source: {fileID: 775975091}
+  SceneWin: {fileID: 0}
 --- !u!114 &628732943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -787,7 +788,7 @@ Prefab:
     - target: {fileID: 2300000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 290824840}
+      objectReference: {fileID: 609721736}
     - target: {fileID: 3300000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: m_Mesh
       value: 

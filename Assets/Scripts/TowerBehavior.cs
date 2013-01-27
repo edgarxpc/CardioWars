@@ -14,7 +14,13 @@ public class TowerBehavior : MonoBehaviour {
 	// Fire rate vars
 	public float fireRateOnSeconds = 0.5f;	
 	private float timeBeforeNextFire = 0.0f;
-
+	public OTAnimatingSprite Sprite;
+	
+	
+	void Start()
+	{
+		Sprite.Play("Walk");
+	}
 	// Update is called once per frame
 	void Update () {
 		// Reload

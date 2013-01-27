@@ -5,11 +5,11 @@ public class LevelBehavior : MonoBehaviour
 {
     private WaveParameters[] waves =
     {
-        new WaveParameters() { EnemiesToGenerate=30, Bosses=0, MinSpawInterval=5f, MaxSpawnInterval=10f, EnemyWeights = new int[] {50, 30, 20} }, 
-        new WaveParameters() { EnemiesToGenerate=40, Bosses=0, MinSpawInterval=5f, MaxSpawnInterval=7f, EnemyWeights = new int[] {40, 40, 20} },
-        new WaveParameters() { EnemiesToGenerate=50, Bosses=0, MinSpawInterval=4f, MaxSpawnInterval=6f, EnemyWeights = new int[] {30, 40, 30} },
-        new WaveParameters() { EnemiesToGenerate=60, Bosses=0, MinSpawInterval=3f, MaxSpawnInterval=5f, EnemyWeights = new int[] {20, 40, 40} },
-        new WaveParameters() { EnemiesToGenerate=70, Bosses=0, MinSpawInterval=2f, MaxSpawnInterval=4f, EnemyWeights = new int[] {10, 50, 40} },
+        new WaveParameters() { EnemiesToGenerate=10, Bosses=0, MinSpawInterval=1f, MaxSpawnInterval=3f, EnemyWeights = new int[] {50, 30, 20} }, 
+        new WaveParameters() { EnemiesToGenerate=12, Bosses=0, MinSpawInterval=1f, MaxSpawnInterval=3f, EnemyWeights = new int[] {40, 40, 20} },
+        new WaveParameters() { EnemiesToGenerate=13, Bosses=0, MinSpawInterval=1f, MaxSpawnInterval=2f, EnemyWeights = new int[] {30, 40, 30} },
+        new WaveParameters() { EnemiesToGenerate=15, Bosses=0, MinSpawInterval=1f, MaxSpawnInterval=2f, EnemyWeights = new int[] {20, 40, 40} },
+        new WaveParameters() { EnemiesToGenerate=20, Bosses=0, MinSpawInterval=1f, MaxSpawnInterval=1f, EnemyWeights = new int[] {10, 50, 40} },
         new WaveParameters() { EnemiesToGenerate=0, Bosses=1, MinSpawInterval=1f, MaxSpawnInterval=1f, EnemyWeights = new int[] {0, 0, 0} },
     };
 

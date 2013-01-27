@@ -12,4 +12,14 @@ public class GameStateEndGood : MonoBehaviour {
 	void Update () {
 	
 	}
+	
+	public static AudioManager Audio { get; set; }
+
+	private void Awake()
+	{
+		Audio = GetComponent<AudioManager>();
+		GameStateIntro.Audio.playSceneWin();
+
+		DontDestroyOnLoad(this);
+	}
 }
