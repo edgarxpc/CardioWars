@@ -22,8 +22,8 @@ public class BulletBehavior : MonoBehaviour {
 		this.transform.position += this.movementDelta * this.movementDirection;
 	}
 
-	void OnCollisionEnter(Collision collision) {
-		if (collision.collider.GetComponent<Rigidbody>() == target.GetComponent<Rigidbody>())
+	void OnTriggerEnter(Collider collider) {
+		if (collider.GetComponent<Rigidbody>() == target.GetComponent<Rigidbody>())
 		{
 			Destroy(this.gameObject);
 		}
