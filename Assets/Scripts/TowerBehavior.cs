@@ -19,7 +19,7 @@ public class TowerBehavior : MonoBehaviour {
 	
 	void Start()
 	{
-		Sprite.Play("Walk");
+		//Sprite.Play("Walk");
 	}
 	// Update is called once per frame
 	void Update () {

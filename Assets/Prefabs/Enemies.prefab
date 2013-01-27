@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
   Money: 15
-  InitialHP: 100
+  InitialHP: 80
   RecoveryAmmount: 300
   Sprite: {fileID: 11400006}
 --- !u!114 &11400020
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
   Money: 25
-  InitialHP: 150
+  InitialHP: 100
   RecoveryAmmount: 200
   Sprite: {fileID: 11400000}
 --- !u!114 &11400022
@@ -894,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
   Money: 5
-  InitialHP: 70
+  InitialHP: 50
   RecoveryAmmount: 100
   Sprite: {fileID: 11400008}
 --- !u!135 &13500000

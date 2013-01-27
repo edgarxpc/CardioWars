@@ -224,7 +224,8 @@ MonoBehaviour:
   missile: {fileID: 0}
   attackRange: 0
   damage: 40
-  fireRateOnSeconds: 1
+  fireRateOnSeconds: 1.5
+  Sprite: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,7 +240,8 @@ MonoBehaviour:
   missile: {fileID: 0}
   attackRange: 0
   damage: 10
-  fireRateOnSeconds: .5
+  fireRateOnSeconds: .800000012
+  Sprite: {fileID: 0}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -254,7 +256,8 @@ MonoBehaviour:
   missile: {fileID: 0}
   attackRange: 0
   damage: 25
-  fireRateOnSeconds: .800000012
+  fireRateOnSeconds: 1.20000005
+  Sprite: {fileID: 0}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

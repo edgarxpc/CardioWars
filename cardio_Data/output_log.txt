@@ -13,7 +13,7 @@ Platform assembly: C:\Users\guill_000\Documents\GitHub\Unity2DGame\cardio_Data\M
 Loading C:\Users\guill_000\Documents\GitHub\Unity2DGame\cardio_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\guill_000\Documents\GitHub\Unity2DGame\cardio_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\guill_000\Documents\GitHub\Unity2DGame\cardio_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.176 seconds
+- Completed reload, in  0.201 seconds
 desktop: 1920x1200 59Hz; virtual: 3840x1200 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found.
@@ -39,72 +39,12 @@ NullReferenceException: Object reference not set to an instance of an object
 Platform assembly: C:\Users\guill_000\Documents\GitHub\Unity2DGame\cardio_Data\Managed\System.dll (this message is harmless)
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2272. Operation took 13.596493 ms.
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 2272. Operation took 11.446642 ms.
 LevelBehavior: Comenzando wave 1
  
 (Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
 
-EnemySpawner: 1/10 enemigos generados, siguiente en 1.047802
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 2/10 enemigos generados, siguiente en 2.091296
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 3/10 enemigos generados, siguiente en 2.703949
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-HeartBehavior: Decrementando HP -85 (AUTO)
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 4/10 enemigos generados, siguiente en 2.969057
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 5/10 enemigos generados, siguiente en 2.834224
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-HeartBehavior: Decrementando HP -85 (AUTO)
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 6/10 enemigos generados, siguiente en 1.601257
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 7/10 enemigos generados, siguiente en 1.337078
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 8/10 enemigos generados, siguiente en 1.295758
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-HeartBehavior: Decrementando HP -85 (AUTO)
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 9/10 enemigos generados, siguiente en 1.992777
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-EnemySpawner: 10/10 enemigos generados, siguiente en 1.000837
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-HeartBehavior: Decrementando HP -85 (AUTO)
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-HeartBehavior: Decrementando HP -85 (AUTO)
- 
-(Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
-
-HeartBehavior: Decrementando HP -85 (AUTO)
+EnemySpawner: 1/10 enemigos generados, siguiente en 1.925561
  
 (Filename: C:/BuildAgent/work/812c4f5049264fad/Runtime/ExportGenerated/StandalonePlayer/UnityEngineDebug.cpp Line: 43)
 
