@@ -23,7 +23,9 @@ public class AudioManager : MonoBehaviour {
 
 	public void playThemeIntro()
 	{
-		Source.PlayOneShot(ThemeIntro, 1);
+		Source.clip = ThemeIntro;
+		Source.loop = true;
+		Source.Play();
 	}
 
 	public void playThemeGame()

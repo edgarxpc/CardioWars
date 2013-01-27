@@ -126,7 +126,7 @@ MonoBehaviour:
     width: 0
     height: 0
   protoType: 
-  baseName: 
+  baseName: Background
   oSize: {x: 100, y: 100}
   imageSize: {x: 0, y: 0}
   _offset: {x: 0, y: 0}
@@ -158,7 +158,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 200741292}
+  - {fileID: 290824840}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -183,7 +183,7 @@ Transform:
   m_LocalScale: {x: 32, y: 24, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!21 &200741292
+--- !u!21 &290824840
 Material:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -230,6 +230,8 @@ GameObject:
   - 114: {fileID: 628732941}
   - 114: {fileID: 628732940}
   - 114: {fileID: 628732939}
+  - 114: {fileID: 628732942}
+  - 114: {fileID: 628732943}
   m_Layer: 0
   m_Name: OT
   m_TagString: Untagged
@@ -338,6 +340,34 @@ MonoBehaviour:
   _debug: 0
   _reset: 0
   startPassive: 1
+--- !u!114 &628732942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628732937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8c1fce1a1d1224489eebe64c3b90e73, type: 3}
+  m_Name: 
+  HearthBeat1: {fileID: 8300000, guid: 4f948e03528b8c046bf6bf62b81df06d, type: 3}
+  HearthBeat2: {fileID: 8300000, guid: 5e277a2c764eb0946bca3fa9ab30f62f, type: 3}
+  ThemeIntro: {fileID: 8300000, guid: fd967dd0c674ad145be6f7997cb514c4, type: 3}
+  ThemeGame: {fileID: 8300000, guid: 884b189151a2c6b46a4b6ae20652780b, type: 3}
+  ShootCholesterol: {fileID: 8300000, guid: 66530cd67e2ccf64b994bfcbea6eadec, type: 3}
+  ShootWorm: {fileID: 8300000, guid: cbcbfae92a879e148ae933c083f681a8, type: 3}
+  ShootTumor: {fileID: 8300000, guid: 65aeacf63eedc0f40809299be415d963, type: 3}
+  Source: {fileID: 775975091}
+--- !u!114 &628732943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 628732937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fdb0f7a3f5cc824fb423df2b617e93b, type: 3}
+  m_Name: 
 --- !u!1 &694008087
 GameObject:
   m_ObjectHideFlags: 0
@@ -466,6 +496,7 @@ GameObject:
   - 124: {fileID: 775975088}
   - 92: {fileID: 775975087}
   - 81: {fileID: 775975086}
+  - 82: {fileID: 775975091}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -533,6 +564,62 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!82 &775975091
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 775975085}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &859552452
 Prefab:
   m_ObjectHideFlags: 0
@@ -700,7 +787,7 @@ Prefab:
     - target: {fileID: 2300000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 200741292}
+      objectReference: {fileID: 290824840}
     - target: {fileID: 3300000, guid: dde1095e7f0e5f24e9e0e4bed757b6c8, type: 2}
       propertyPath: m_Mesh
       value: 
