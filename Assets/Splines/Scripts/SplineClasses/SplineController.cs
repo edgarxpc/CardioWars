@@ -177,14 +177,14 @@ public class SplineController : MonoBehaviour {
 			 * if we have a grav vertex, use it's forward vector
 			 * if we don't have either, look forward
 			 */
-			Quaternion targetRotation = Quaternion.identity;
+			/*Quaternion targetRotation = Quaternion.identity;
 			if(groundNode)
 				targetRotation = Quaternion.LookRotation((goInReverse ^ reverseOrientation ? 1 : -1) * groundNode.transform.forward, groundNode.transform.up);
 			else if(gravNode)
 				targetRotation = Quaternion.LookRotation((goInReverse ^ reverseOrientation ? 1 : -1) * gravNode.transform.forward, gravNode.transform.up);
 			else
 				targetRotation = Quaternion.LookRotation((goInReverse ^ reverseOrientation ? 1 : -1) * Vector3.right, Vector3.up);
-			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationDamping);
+			transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationDamping);*/
 		}
 	}
 	void OnDrawGizmos() {

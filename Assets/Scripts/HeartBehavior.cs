@@ -13,7 +13,7 @@ public class HeartBehavior : MonoBehaviour
     private float heartBeatInterval;
     private float elapsedTimeForBeat;
     private float elapsedTimeForAttack;
-    private HealthStates state;
+    private HeartStates state;
 
     const int MaxHealth = 2500;   
     const int HealthBar = 1400;
@@ -21,14 +21,11 @@ public class HeartBehavior : MonoBehaviour
     const int MoreSickBar = 250;
 
     const float HealthBeatInterval = 2f;    
-    const float SickBeatInterval = 1f;
-    const float MoreSickBeatInterval = 0.65f;    
-    const float CriticBeatInterval = 0.5f;
-    const float CriticRate = 1.25f;
-    const float DyingRate = 1f;
-    const float DyingTime = 3f;
+    const float SickBeatInterval = 1.3f;
+    const float MoreSickBeatInterval = 0.8f;    
+    const float CriticBeatInterval = 0.6f;
 
-    private enum HealthStates
+    private enum HeartStates
     {
         Health,
         Sick,
@@ -43,22 +40,25 @@ public class HeartBehavior : MonoBehaviour
         elapsedTimeForBeat = HealthBeatInterval;
         elapsedTimeForAttack = 0;
         heartBeatInterval = HealthBeatInterval;
-        state = HealthStates.Health;
+        state = HeartStates.Health;
     }
 
     private void Update()
     {
-        if (state == HealthStates.Dead)
+        if (state == HeartStates.Dead)
         {
-            GameState.CurrentState = LevelState.PlayerWon;
+            return;
         }
-        else if (state == HealthStates.Dying)
+
+        if (state == HeartStates.Dying)
         {
-            elapsedTimeForBeat += Time.deltaTime;
-            if (elapsedTimeForBeat > heartBeatInterval)
+            Sprite.looping = false;
+            Sprite.Play(state.ToString());
+            Sprite.onAnimationFinish = delegate
             {
-                state = HealthStates.Dead;
-            }            
+                GameState.CurrentState = LevelState.PlayerWon;
+            };
+            state = HeartStates.Dead;
         }
         else
         {
@@ -78,40 +78,39 @@ public class HeartBehavior : MonoBehaviour
                     Debug.Log(string.Format("HeartBehavior: Decrementando HP -{0} (AUTO)", HealthDecrement));
                     elapsedTimeForAttack = 0;
                     currentHP -= HealthDecrement;
-                }
-            }
 
-            if (currentHP > MaxHealth)
-            {
-                GameState.CurrentState = LevelState.HeartWon;
-            }
-            else if (currentHP > HealthBar)
-            {
-                state = HealthStates.Health;
-                heartBeatInterval = HealthBeatInterval;
-            }
-            else if (currentHP > SickBar)
-            {
-                state = HealthStates.Sick;
-                heartBeatInterval = SickBeatInterval;
-            }
-            else if (currentHP > MoreSickBar)
-            {
-                state = HealthStates.MoreSick;
-                heartBeatInterval = MoreSickBeatInterval;
-            }
-            else if (currentHP > 0)
-            {
-                heartBeatInterval = CriticBeatInterval;
-                Sprite.speed = CriticRate;
-            }
-            else
-            {
-                Sprite.speed = DyingRate;
-                state = HealthStates.Dying;
-                Sprite.Play(state.ToString());
-                heartBeatInterval = DyingTime;
-                elapsedTimeForBeat = 0;
+                    if (currentHP > MaxHealth)
+                    {
+                        GameState.CurrentState = LevelState.HeartWon;
+                    }
+                    else if (currentHP > HealthBar)
+                    {
+                        state = HeartStates.Health;
+                        heartBeatInterval = HealthBeatInterval;
+                    }
+                    else if (currentHP > SickBar)
+                    {
+                        state = HeartStates.Sick;
+                        heartBeatInterval = SickBeatInterval;
+                    }
+                    else if (currentHP > MoreSickBar)
+                    {
+                        state = HeartStates.MoreSick;
+                        heartBeatInterval = MoreSickBeatInterval;
+                    }
+                    else if (currentHP > 0)
+                    {
+                        heartBeatInterval = CriticBeatInterval;
+                        Sprite.speed = 1.5f;
+                    }
+                    else
+                    {
+                        state = HeartStates.Dying;
+                        heartBeatInterval = 0;
+                        elapsedTimeForBeat = 0;
+                        Sprite.speed = 1;
+                    }
+                }
             }
         }
     }

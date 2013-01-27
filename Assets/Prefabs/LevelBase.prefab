@@ -132,6 +132,102 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100016
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400016}
+  - 114: {fileID: 11400024}
+  m_Layer: 0
+  m_Name: white cell anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100018
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400018}
+  - 114: {fileID: 11400026}
+  m_Layer: 0
+  m_Name: red cell anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100020
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400020}
+  - 114: {fileID: 11400028}
+  m_Layer: 0
+  m_Name: o2 comp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100022
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400022}
+  - 114: {fileID: 11400030}
+  m_Layer: 0
+  m_Name: white cell comp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100024
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400024}
+  - 114: {fileID: 11400032}
+  m_Layer: 0
+  m_Name: red cell comp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100026
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400026}
+  - 114: {fileID: 11400034}
+  m_Layer: 0
+  m_Name: o2 anims
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -181,6 +277,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400014}
+  - {fileID: 400020}
+  - {fileID: 400024}
+  - {fileID: 400022}
   m_Father: {fileID: 400004}
 --- !u!4 &400008
 Transform:
@@ -204,6 +303,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400012}
+  - {fileID: 400026}
+  - {fileID: 400018}
+  - {fileID: 400016}
   m_Father: {fileID: 400004}
 --- !u!4 &400012
 Transform:
@@ -227,6 +329,72 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400006}
+--- !u!4 &400016
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -9.53674316e-07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+--- !u!4 &400018
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -9.53674316e-07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+--- !u!4 &400020
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.81469727e-06, y: -9.53674316e-07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+--- !u!4 &400022
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.81469727e-06, y: -9.53674316e-07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+--- !u!4 &400024
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.81469727e-06, y: -9.53674316e-07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+--- !u!4 &400026
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -9.53674316e-07, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -238,9 +406,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1db8878ed2ed6034bad10a344f886978, type: 3}
   m_Name: 
   Enemies:
-  - {fileID: 400004, guid: d497d581d7f017a4396175356909ee6c, type: 2}
-  - {fileID: 400006, guid: d497d581d7f017a4396175356909ee6c, type: 2}
   - {fileID: 400008, guid: d497d581d7f017a4396175356909ee6c, type: 2}
+  - {fileID: 400006, guid: d497d581d7f017a4396175356909ee6c, type: 2}
+  - {fileID: 400004, guid: d497d581d7f017a4396175356909ee6c, type: 2}
   Boss: {fileID: 400002, guid: d497d581d7f017a4396175356909ee6c, type: 2}
   SpawnPosition: {x: 18, y: 0, z: -2}
 --- !u!114 &11400002
@@ -417,7 +585,7 @@ MonoBehaviour:
     singleDuration: 0
     startIndex: 8
     _containerName: heart comp
-  - name: Dead
+  - name: Dying
     container: {fileID: 11400014}
     startFrame: 6
     endFrame: 8
@@ -740,7 +908,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f57d2695ac579344913481807cb66e6, type: 3}
   m_Name: 
@@ -749,6 +917,1194 @@ MonoBehaviour:
   fadeDuration: 5
   guiDepth: -1000
   fadeIntoScene: 1
+--- !u!114 &11400024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf791b8ec508eb4a94c7295007afe68, type: 3}
+  m_Name: 
+  _name: white cell anim
+  _fps: 32
+  _duration: 1.46875
+  framesets:
+  - name: Walk
+    container: {fileID: 11400030}
+    startFrame: 0
+    endFrame: 11
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: white cell comp
+  - name: Dying
+    container: {fileID: 11400030}
+    startFrame: 12
+    endFrame: 46
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 12
+    _containerName: white cell comp
+--- !u!114 &11400026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf791b8ec508eb4a94c7295007afe68, type: 3}
+  m_Name: 
+  _name: red cell anim
+  _fps: 32
+  _duration: 1.46875
+  framesets:
+  - name: Walk
+    container: {fileID: 11400032}
+    startFrame: 0
+    endFrame: 11
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: red cell comp
+  - name: Dying
+    container: {fileID: 11400032}
+    startFrame: 12
+    endFrame: 46
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 12
+    _containerName: red cell comp
+--- !u!114 &11400028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
+  m_Name: 
+  _name: o2 comp
+  _sheetSize: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: 42c45a2d16fa1a04d8cec31303c53991, type: 3}
+  sizeTextures: []
+  atlasData:
+  - name: O20001
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20002
+    position: {x: 68, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20003
+    position: {x: 134, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20004
+    position: {x: 200, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20005
+    position: {x: 266, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20006
+    position: {x: 332, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20007
+    position: {x: 398, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20008
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20009
+    position: {x: 68, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20010
+    position: {x: 134, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20011
+    position: {x: 200, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O20012
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0001
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0002
+    position: {x: 266, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0003
+    position: {x: 332, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0004
+    position: {x: 398, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0005
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0006
+    position: {x: 68, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0007
+    position: {x: 134, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0008
+    position: {x: 200, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0009
+    position: {x: 266, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0010
+    position: {x: 332, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0011
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0012
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0013
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0014
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0015
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0016
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0017
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0018
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0019
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0020
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0021
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0022
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0023
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0024
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0025
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0026
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0027
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0028
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0029
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0030
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0031
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0032
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0033
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0034
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0035
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: O2_die0036
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  offsetSizing: 1
+  metaType: 
+  metaData: []
+  _atlasDataFile: {fileID: 4900000, guid: 46a4206360d2bdd428fd3a1c90b011f0, type: 3}
+  reloadData: 0
+  bytesDataFile: 23694
+  id: 2
+--- !u!114 &11400030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
+  m_Name: 
+  _name: white cell comp
+  _sheetSize: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: 662350f01640cfb40ac9abd836d47596, type: 3}
+  sizeTextures: []
+  atlasData:
+  - name: white_blood0001
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0002
+    position: {x: 68, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0003
+    position: {x: 134, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0004
+    position: {x: 200, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0005
+    position: {x: 266, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0006
+    position: {x: 332, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0007
+    position: {x: 398, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0008
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0009
+    position: {x: 68, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0010
+    position: {x: 134, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0011
+    position: {x: 200, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood0012
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0001
+    position: {x: 266, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0002
+    position: {x: 332, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0003
+    position: {x: 398, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0004
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0005
+    position: {x: 68, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0006
+    position: {x: 134, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0007
+    position: {x: 200, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0008
+    position: {x: 266, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0009
+    position: {x: 332, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0010
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0011
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0012
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0013
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0014
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0015
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0016
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0017
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0018
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0019
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0020
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0021
+    position: {x: 332, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0022
+    position: {x: 332, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0023
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0024
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0025
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0026
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0027
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0028
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0029
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0030
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0031
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0032
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0033
+    position: {x: 332, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0034
+    position: {x: 332, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0035
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: white_blood_die0036
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  offsetSizing: 1
+  metaType: 
+  metaData: []
+  _atlasDataFile: {fileID: 4900000, guid: 7385b992e228ce14cb09e253b9ef8a30, type: 3}
+  reloadData: 0
+  bytesDataFile: 24140
+  id: 2
+--- !u!114 &11400032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
+  m_Name: 
+  _name: red cell comp
+  _sheetSize: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: 85678f958743830448f609b528daf509, type: 3}
+  sizeTextures: []
+  atlasData:
+  - name: red_blood0001
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0002
+    position: {x: 68, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0003
+    position: {x: 134, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0004
+    position: {x: 200, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0005
+    position: {x: 266, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0006
+    position: {x: 332, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0007
+    position: {x: 398, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0008
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0009
+    position: {x: 68, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0010
+    position: {x: 134, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0011
+    position: {x: 200, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood0012
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0001
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0002
+    position: {x: 266, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0003
+    position: {x: 332, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0004
+    position: {x: 398, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0005
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0006
+    position: {x: 68, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0007
+    position: {x: 134, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0008
+    position: {x: 200, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0009
+    position: {x: 266, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0010
+    position: {x: 332, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0011
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0012
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0013
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0014
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0015
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0016
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0017
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0018
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0019
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0020
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0021
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0022
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0023
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0024
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0025
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0026
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0027
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0028
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0029
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0030
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0031
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0032
+    position: {x: 200, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0033
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0034
+    position: {x: 266, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0035
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: red_blood_die0036
+    position: {x: 398, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  offsetSizing: 1
+  metaType: 
+  metaData: []
+  _atlasDataFile: {fileID: 4900000, guid: 806e58a2b9c751c4496e544d754ee3af, type: 3}
+  reloadData: 0
+  bytesDataFile: 24040
+  id: 2
+--- !u!114 &11400034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf791b8ec508eb4a94c7295007afe68, type: 3}
+  m_Name: 
+  _name: o2 anims
+  _fps: 32
+  _duration: 1.46875
+  framesets:
+  - name: Walk
+    container: {fileID: 11400028}
+    startFrame: 0
+    endFrame: 11
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: o2 comp
+  - name: Dying
+    container: {fileID: 11400028}
+    startFrame: 12
+    endFrame: 46
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 12
+    _containerName: o2 comp
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

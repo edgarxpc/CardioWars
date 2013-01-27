@@ -141,15 +141,15 @@
         </struct>
         <key>fileList</key>
         <array>
-            <filename>Working/corazon_muerto.png</filename>
-            <filename>Working/corazon1_1.png</filename>
-            <filename>Working/corazon1_2.png</filename>
-            <filename>Working/corazon2_1.png</filename>
-            <filename>Working/corazon2_2.png</filename>
-            <filename>Working/corazon3_1.png</filename>
-            <filename>Working/corazon3_2.png</filename>
-            <filename>Working/corazon4_1.png</filename>
-            <filename>Working/corazon4_2.png</filename>
+            <filename>Working/Corazon/corazon_muerto.png</filename>
+            <filename>Working/Corazon/corazon1_1.png</filename>
+            <filename>Working/Corazon/corazon1_2.png</filename>
+            <filename>Working/Corazon/corazon2_1.png</filename>
+            <filename>Working/Corazon/corazon2_2.png</filename>
+            <filename>Working/Corazon/corazon3_1.png</filename>
+            <filename>Working/Corazon/corazon3_2.png</filename>
+            <filename>Working/Corazon/corazon4_1.png</filename>
+            <filename>Working/Corazon/corazon4_2.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

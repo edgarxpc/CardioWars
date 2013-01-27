@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40005ce4e6928ab46bd56cea95ce88a3, type: 3}
   m_Name: 
   Sprite: {fileID: 11400002}
-  InitialHP: 2000
+  InitialHP: 200
   HealthDecrement: 85
   AttackInterval: 5
 --- !u!114 &11400002
