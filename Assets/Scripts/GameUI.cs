@@ -39,13 +39,13 @@ public class GameUI : MonoBehaviour
 		
 		if (GUI.Button(new Rect(5, 5, 74, 74), "",styleTower1))
 		{
-			GameState.TowerSelected = TowerTypes.Cholesterol;
-//			Debug.Log(string.Format("Hit tower {0}", GameState.Tower.Cholesterol.ToString()));
+			GameState.TowerSelected = TowerTypes.Tumor;
+            Debug.Log(string.Format("Hit tower {0}", TowerTypes.Tumor.ToString()));
 		}
 		else if (GUI.Button(new Rect(84, 5, 74, 74), "",styleTower2))
 		{
-			GameState.TowerSelected = TowerTypes.Tumor;
-//			Debug.Log(string.Format("Hit tower {0}", GameState.Tower.Tumor.ToString()));
+			GameState.TowerSelected = TowerTypes.Cholesterol;
+            Debug.Log(string.Format("Hit tower {0}", TowerTypes.Cholesterol.ToString()));
 		}
 		else if (GUI.Button(new Rect(163, 5, 74, 74), "",styleTower3))
 		{

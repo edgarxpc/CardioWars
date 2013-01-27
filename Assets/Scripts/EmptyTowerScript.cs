@@ -8,8 +8,8 @@ public class EmptyTowerScript : MonoBehaviour
 	public GameObject objTumorTower;
 
 	const int c_WormPrice = 10;
-	const int c_CholesterolPrice = 30;
-	const int c_TumorPrice = 50;
+	const int c_CholesterolPrice = 50;
+	const int c_TumorPrice = 30;
 
 	// Use this for initialization
 	void Start()
@@ -26,7 +26,7 @@ public class EmptyTowerScript : MonoBehaviour
 	void OnMouseDown()
 	{
 		switch (GameState.TowerSelected)
-		{
+		{            
 			case TowerTypes.Cholesterol:
 
 				if (GameState.AvailableMoney >= c_CholesterolPrice)
