@@ -48,13 +48,13 @@ public class LevelBehavior : MonoBehaviour
             case LevelState.PlayerWon:
                 Debug.LogError(string.Format("LevelBehavior: Jugador gana!"));
                 Debug.Break();
-                //TODO: Hacer transicion a escena
+				Application.LoadLevel(3); //Gameover good.
                 break;
 
             case LevelState.HeartWon:
                 Debug.LogError(string.Format("LevelBehavior: Corazon gana!"));
                 Debug.Break();
-                //TODO: Hacer transicion a escena
+                Application.LoadLevel(2); //Gameover bad.
                 break;
         }
     }
