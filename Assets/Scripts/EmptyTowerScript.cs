@@ -31,6 +31,7 @@ public class EmptyTowerScript : MonoBehaviour
 
 				if (GameState.AvailableMoney >= c_CholesterolPrice)
 				{
+					Application.LoadLevel(2);
 					Instantiate(objCholesterolTower, this.transform.position, Quaternion.identity);
                     GameState.TowerSelected = TowerTypes.None;
                     Debug.Log(string.Format("New {0} tower created", GameState.TowerSelected.ToString()));
