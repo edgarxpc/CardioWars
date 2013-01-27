@@ -8,6 +8,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
+  - 114: {fileID: 11400024}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -29,6 +30,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400016}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -50,6 +52,7 @@ GameObject:
   - 114: {fileID: 11400006}
   - 54: {fileID: 5400002}
   - 114: {fileID: 11400004}
+  - 114: {fileID: 11400018}
   m_Layer: 0
   m_Name: RedCell
   m_TagString: Untagged
@@ -71,6 +74,7 @@ GameObject:
   - 114: {fileID: 11400008}
   - 54: {fileID: 5400004}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400020}
   m_Layer: 0
   m_Name: WhiteCell
   m_TagString: Untagged
@@ -92,6 +96,7 @@ GameObject:
   - 114: {fileID: 11400014}
   - 54: {fileID: 5400006}
   - 114: {fileID: 11400012}
+  - 114: {fileID: 11400022}
   m_Layer: 0
   m_Name: Oxygen
   m_TagString: Untagged
@@ -534,6 +539,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de1bf6e5fa25a0d4b856bf6e737e3c1d, type: 3}
   m_Name: 
   Target: {fileID: 0}
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
+  m_Name: 
+  hp: 10
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
+  m_Name: 
+  hp: 10
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
+  m_Name: 
+  hp: 5
+--- !u!114 &11400022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
+  m_Name: 
+  hp: 5
+--- !u!114 &11400024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
+  m_Name: 
+  hp: 0
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
