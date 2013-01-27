@@ -4,26 +4,17 @@ using System.Collections;
 public class TowerBehavior : MonoBehaviour {
 	
 	// Target and bullets
-	private GameObject target;
-	
 	public GameObject bullet;
-	
 	public GameObject missile;
 	
 	// Damage properties
 	public float attackRange;
-	
 	public int damage;
 	
 	// Fire rate vars
-	public float fireRateOnSeconds = 0.5f;
-	
+	public float fireRateOnSeconds = 0.5f;	
 	private float timeBeforeNextFire = 0.0f;
-		
-	// Use this for initialization
-	void Start () {
-	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		// Reload
@@ -58,9 +49,14 @@ public class TowerBehavior : MonoBehaviour {
 			firedBullet.GetComponent<BulletBehavior>().parent = this.gameObject;
 			firedBullet.GetComponent<BulletBehavior>().damage = this.damage;
 			this.missile = firedBullet;
-			
-			// Store enemy
-			this.target = collider.gameObject;
 		}
 	}
+}
+
+public enum TowerTypes
+{
+    None = 0,
+    Cholesterol = 1,
+    Tumor = 2,
+    Worm = 3,
 }

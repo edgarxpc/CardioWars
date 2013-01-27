@@ -4,28 +4,28 @@ using System.Collections.Generic;
 
 public class HeartBehavior : MonoBehaviour
 {
-    public OTAnimatingSprite Animation;
-        
-    private int health;
+    public OTAnimatingSprite Sprite;
+    public int InitialHP = 2000;
+    public int HealthDecrement = 85;
+    public float AttackInterval = 5f;
+    
+    private int currentHP;
     private float heartBeatInterval;
     private float elapsedTimeForBeat;
     private float elapsedTimeForAttack;
     private HealthStates state;
 
-    const int MaxHealth = 2500;
-    const int InitialHealth = 2000;
-    const int HealthDecrement = 85;
+    const int MaxHealth = 2500;   
     const int HealthBar = 1400;
     const int SickBar = 800;
     const int MoreSickBar = 250;
 
-    const float AttackInterval = 5f;
-    const float HealthBeatInterval = 2f;
+    const float HealthBeatInterval = 2f;    
     const float SickBeatInterval = 1f;
     const float MoreSickBeatInterval = 0.65f;    
     const float CriticBeatInterval = 0.5f;
     const float CriticRate = 1.25f;
-    const float DyingRate = 0.9f;
+    const float DyingRate = 1f;
     const float DyingTime = 3f;
 
     private enum HealthStates
@@ -39,7 +39,7 @@ public class HeartBehavior : MonoBehaviour
 
     private void Start()
     {
-        health = InitialHealth;
+        currentHP = InitialHP;
         elapsedTimeForBeat = HealthBeatInterval;
         elapsedTimeForAttack = 0;
         heartBeatInterval = HealthBeatInterval;
@@ -50,7 +50,7 @@ public class HeartBehavior : MonoBehaviour
     {
         if (state == HealthStates.Dead)
         {
-            GameState.LevelCompleted();
+            GameState.CurrentState = LevelState.PlayerWon;
         }
         else if (state == HealthStates.Dying)
         {
@@ -66,42 +66,50 @@ public class HeartBehavior : MonoBehaviour
             if (elapsedTimeForBeat > heartBeatInterval)
             {
                 elapsedTimeForBeat = 0;
-                Animation.Play(state.ToString());
+                Sprite.Play(state.ToString());
 				GameState.Audio.playHearthBeat1();
             }
 
-            elapsedTimeForAttack += Time.deltaTime;
-            if (elapsedTimeForAttack > AttackInterval)
+            if (GameState.CurrentState == LevelState.WaveStarted)
             {
-                elapsedTimeForAttack = 0;
-                health -= HealthDecrement;
+                elapsedTimeForAttack += Time.deltaTime;
+                if (elapsedTimeForAttack > AttackInterval)
+                {
+                    Debug.Log(string.Format("HeartBehavior: Decrementando HP -{0} (AUTO)", HealthDecrement));
+                    elapsedTimeForAttack = 0;
+                    currentHP -= HealthDecrement;
+                }
             }
 
-            if (health > HealthBar)
+            if (currentHP > MaxHealth)
+            {
+                GameState.CurrentState = LevelState.HeartWon;
+            }
+            else if (currentHP > HealthBar)
             {
                 state = HealthStates.Health;
                 heartBeatInterval = HealthBeatInterval;
             }
-            else if (health > SickBar)
+            else if (currentHP > SickBar)
             {
                 state = HealthStates.Sick;
                 heartBeatInterval = SickBeatInterval;
             }
-            else if (health > MoreSickBar)
+            else if (currentHP > MoreSickBar)
             {
                 state = HealthStates.MoreSick;
                 heartBeatInterval = MoreSickBeatInterval;
             }
-            else if (health > 0)
+            else if (currentHP > 0)
             {
                 heartBeatInterval = CriticBeatInterval;
-                Animation.speed = CriticRate;
+                Sprite.speed = CriticRate;
             }
             else
             {
-                Animation.speed = DyingRate;
+                Sprite.speed = DyingRate;
                 state = HealthStates.Dying;
-                Animation.Play(state.ToString());
+                Sprite.Play(state.ToString());
                 heartBeatInterval = DyingTime;
                 elapsedTimeForBeat = 0;
             }
@@ -110,8 +118,10 @@ public class HeartBehavior : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //EnemyBehavior enemy = other.GetComponent<EnemyBehavior>();
-        //health += enemy.RecoveryAmmount;
+        EnemyBehavior enemy = other.GetComponent<EnemyBehavior>();
+        Debug.Log(string.Format("HeartBehavior: Incremantando HP +{0}", enemy.RecoveryAmmount));
+
+        currentHP += enemy.RecoveryAmmount;
         Destroy(other.gameObject);
     }
 }

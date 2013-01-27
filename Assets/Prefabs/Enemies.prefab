@@ -549,8 +549,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
-  Money: 0
-  hp: 1000
+  Money: 10
+  InitialHP: 100
+  RecoveryAmmount: 2500
 --- !u!114 &11400018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -562,7 +563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
   Money: 20
-  hp: 130
+  InitialHP: 30
+  RecoveryAmmount: 300
 --- !u!114 &11400020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -574,7 +576,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
   Money: 10
-  hp: 80
+  InitialHP: 20
+  RecoveryAmmount: 200
 --- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -586,7 +589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
   Money: 5
-  hp: 50
+  InitialHP: 10
+  RecoveryAmmount: 100
 --- !u!114 &11400024
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -598,7 +602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
   Money: 0
-  hp: 0
+  InitialHP: 0
+  RecoveryAmmount: 0
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

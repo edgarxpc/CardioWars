@@ -27,33 +27,33 @@ public class EmptyTowerScript : MonoBehaviour
 	{
 		switch (GameState.TowerSelected)
 		{
-			case GameState.Tower.Cholesterol:
+			case TowerTypes.Cholesterol:
 
 				if (GameState.AvailableMoney >= c_CholesterolPrice)
 				{
 					Instantiate(objCholesterolTower, this.transform.position, Quaternion.identity);
-					GameState.TowerSelected = GameState.Tower.None;
-					Debug.Log(string.Format("New {0} tower created", GameState.TowerSelected.ToString()));
+                    GameState.TowerSelected = TowerTypes.None;
+                    Debug.Log(string.Format("New {0} tower created", GameState.TowerSelected.ToString()));
 					GameState.AvailableMoney -= c_CholesterolPrice;
 					Destroy(gameObject);
 				}
 				break;
-			case GameState.Tower.Tumor:
+			case TowerTypes.Tumor:
 				if (GameState.AvailableMoney >= c_TumorPrice)
 				{
 					Instantiate(objTumorTower, this.transform.position, Quaternion.identity);
-					GameState.TowerSelected = GameState.Tower.None;
-					Debug.Log(string.Format("New {0} tower created", GameState.TowerSelected.ToString()));
+                    GameState.TowerSelected = TowerTypes.None;
+                    Debug.Log(string.Format("New {0} tower created", GameState.TowerSelected.ToString()));
 					GameState.AvailableMoney -= c_TumorPrice;
 					Destroy(gameObject);
 				}
 				break;
-			case GameState.Tower.Worm:
+			case TowerTypes.Worm:
 				if (GameState.AvailableMoney >= c_WormPrice)
 				{
 					Instantiate(objWormTower, this.transform.position, Quaternion.identity);
-					GameState.TowerSelected = GameState.Tower.None;
-					Debug.Log(string.Format("New {0} tower created", GameState.TowerSelected.ToString()));
+                    GameState.TowerSelected = TowerTypes.None;
+                    Debug.Log(string.Format("New {0} tower created", GameState.TowerSelected.ToString()));
 					GameState.AvailableMoney -= c_WormPrice;
 					Destroy(gameObject);
 				}

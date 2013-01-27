@@ -125,8 +125,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
   m_Name: 
-  movementDelta: 0
-  movementDirection: {x: 0, y: 0, z: 0}
+  Money: 1
+  InitialHP: 1
+  RecoveryAmmount: 1
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -1,30 +1,46 @@
 using UnityEngine;
 using System.Collections;
 
-public class EnemyBehavior : MonoBehaviour {
+public class EnemyBehavior : MonoBehaviour
+{
+    public int Money;
+    public int InitialHP;
+    public int RecoveryAmmount;
 
-	public int Money;
+    public UntrackEnemy Untrack;
+    
+    private int currentHP;
 
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (this.hp <= 0)
-		{
+    void Start()
+    {
+        currentHP = InitialHP;
+    }
+
+    void Update()
+    {
+        if (currentHP <= 0)
+        {
 			GameState.AvailableMoney += Money;
-			Destroy(this.gameObject);
-		}
-	}
-	
-	void OnTriggerEnter(Collider collider) {
-		BulletBehavior bulletBehavior = collider.GetComponent<BulletBehavior>();
-		if (bulletBehavior != null)
-		{
-			this.hp -= bulletBehavior.damage;
-		}
-	}
-	
-	public int hp;
+            Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        BulletBehavior bulletBehavior = collider.GetComponent<BulletBehavior>();
+        if (bulletBehavior != null)
+        {
+            currentHP -= bulletBehavior.damage;
+        }
+    }
+
+    void OnDestroy()
+    {
+        if (Untrack != null)
+        {
+            Untrack(transform);
+        }
+    }
 }
+
+public delegate void UntrackEnemy(Transform enemy);

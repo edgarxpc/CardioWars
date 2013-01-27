@@ -44,7 +44,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.9435005, y: -1.08597755, z: -.100000001}
+  m_LocalPosition: {x: -9.77391243, y: -2.17442894, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -56,8 +56,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.177893639, y: 1.14243937, z: .00116022874}
-  m_LocalScale: {x: 6, y: 6, z: 1}
+  m_LocalPosition: {x: -1.12210274, y: 1.39665031, z: .00150886062}
+  m_LocalScale: {x: 10, y: 11, z: 0}
   m_Children: []
   m_Father: {fileID: 400000}
 --- !u!23 &2300000
@@ -120,7 +120,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40005ce4e6928ab46bd56cea95ce88a3, type: 3}
   m_Name: 
-  Animation: {fileID: 11400002}
+  Sprite: {fileID: 11400002}
+  InitialHP: 2000
+  HealthDecrement: 85
+  AttackInterval: 5
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,8 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0774980171c514ea93208b47048a0c, type: 3}
   m_Name: 
   _name: Heart Sprite
-  _position: {x: -.177893639, y: 1.14243937}
-  _size: {x: 6, y: 6}
+  _position: {x: -1.12210274, y: 1.39665031}
+  _size: {x: 10, y: 11}
   _rotation: 0
   _pivot: 4
   _pivotPoint: {x: 0, y: 0}

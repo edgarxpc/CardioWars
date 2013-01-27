@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 100, y: 100, z: 1}
+  m_LocalScale: {x: 32, y: 24, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!1002 &400001
@@ -76,9 +76,9 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a18d0574a4fa59946a49ede6640a1f55, type: 3}
   m_Name: 
-  _name: 
+  _name: Background
   _position: {x: 0, y: 0}
-  _size: {x: 100, y: 100}
+  _size: {x: 32, y: 24}
   _rotation: 0
   _pivot: 4
   _pivotPoint: {x: 0, y: 0}
@@ -91,7 +91,7 @@ MonoBehaviour:
   _collisionSize: .400000006
   draggable: 0
   dragButton: 0
-  init: 1
+  init: 0
   _worldBounds:
     serializedVersion: 2
     x: 0
@@ -99,8 +99,8 @@ MonoBehaviour:
     width: 0
     height: 0
   protoType: 
-  baseName: 
-  oSize: {x: 0, y: 0}
+  baseName: Background
+  oSize: {x: 100, y: 100}
   imageSize: {x: 0, y: 0}
   _offset: {x: 0, y: 0}
   _baseOffset: {x: 0, y: 0}
@@ -111,13 +111,13 @@ MonoBehaviour:
   _materialReference: transparent
   _tintColor: {r: 1, g: 1, b: 1, a: 1}
   _alpha: 1
-  _image: {fileID: 0}
+  _image: {fileID: 2800000, guid: 04fe52d56b352bd47adb9e597e8bded7, type: 3}
   sizeImages: []
   _frameIndex: 0
   _frameName: 
   _spriteContainer: {fileID: 0}
   _containerName: 
-  _newSprite: 1
+  _newSprite: 0
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6
