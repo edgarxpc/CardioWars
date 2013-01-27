@@ -9,3 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
   - enabled: 1
     path: Assets/Scenes/Gameplay.unity
+  - enabled: 1
+    path: Assets/Scenes/GameOverBad.unity
+  - enabled: 1
+    path: Assets/Scenes/GameOverGood.unity
