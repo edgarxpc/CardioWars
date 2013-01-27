@@ -1352,7 +1352,6 @@ public class OTObject : MonoBehaviour
 			
 			if (name == "GardenItem-2")
 			{
-				int a=1;
 			}
 			
             if (!Vector2.Equals(Vector2.zero, imageSize) && !Vector2.Equals(size, imageSize))
