@@ -74,42 +74,6 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
---- !u!21 &471344192
-Material:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: OTMaterial-transparent
-  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
-  m_SavedProperties:
-    serializedVersion: 2
-    m_TexEnvs:
-      data:
-        first:
-          name: _MainTex
-        second:
-          m_Texture: {fileID: 2800000, guid: ad98ded1ecea64e4197c980db997b5bc, type: 3}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-    m_Floats:
-      data:
-        first:
-          name: _InvFade
-        second: 1
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: 1, g: 1, b: 1, a: 1}
-      data:
-        first:
-          name: _EmisColor
-        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
-      data:
-        first:
-          name: _TintColor
-        second: {r: .5, g: .5, b: .5, a: .5}
 --- !u!1 &484758387
 GameObject:
   m_ObjectHideFlags: 0
@@ -333,7 +297,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 471344192}
+  - {fileID: 871000952}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -346,7 +310,7 @@ MeshFilter:
     type: 2}
   m_PrefabInternal: {fileID: 1320006335}
   m_GameObject: {fileID: 727553904}
-  m_Mesh: {fileID: 1011675906}
+  m_Mesh: {fileID: 1046099849}
 --- !u!4 &727553908
 Transform:
   m_ObjectHideFlags: 0
@@ -358,7 +322,43 @@ Transform:
   m_LocalScale: {x: 416, y: 416, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
---- !u!43 &1011675906
+--- !u!21 &871000952
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OTMaterial-transparent
+  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: ad98ded1ecea64e4197c980db997b5bc, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
+--- !u!43 &1046099849
 Mesh:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -798,11 +798,11 @@ Prefab:
     - target: {fileID: 2300000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 471344192}
+      objectReference: {fileID: 871000952}
     - target: {fileID: 3300000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 1011675906}
+      objectReference: {fileID: 1046099849}
     - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
       propertyPath: m_LocalScale.x
       value: 416
@@ -1070,8 +1070,8 @@ MonoBehaviour:
   metaData: []
   _atlasDataFile: {fileID: 4900000, guid: a929250f31c4dfc47a4fae86aa04e50f, type: 3}
   reloadData: 0
-  bytesDataFile: 4983
-  id: 1
+  bytesDataFile: 5122
+  id: 2
 --- !u!1 &1562789257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,11 +1408,11 @@ Prefab:
       objectReference: {fileID: 4900000, guid: a929250f31c4dfc47a4fae86aa04e50f, type: 3}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: bytesDataFile
-      value: 4983
+      value: 5122
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
       propertyPath: id
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}

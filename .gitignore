@@ -4,6 +4,8 @@
 *.csproj
 *.pidb
 *.unityproj
+Thumbs.db
+Thumbs.db.meta
 .DS_Store
 /obj
 /Temp

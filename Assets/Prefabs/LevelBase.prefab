@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400010}
+  - 114: {fileID: 11400016}
   m_Layer: 0
   m_Name: LevelBase
   m_TagString: Untagged
@@ -96,6 +97,38 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100012
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400012}
+  - 114: {fileID: 11400012}
+  m_Layer: 0
+  m_Name: heart anims
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100014
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400014}
+  - 114: {fileID: 11400014}
+  m_Layer: 0
+  m_Name: heart comp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -143,7 +176,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 21.1866798, y: 14.8388662, z: -14.9551516}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 400014}
   m_Father: {fileID: 400004}
 --- !u!4 &400008
 Transform:
@@ -165,8 +199,31 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -276.670624, y: 15.0754004, z: 17.6875}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 400012}
   m_Father: {fileID: 400004}
+--- !u!4 &400012
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+--- !u!4 &400014
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.2584667, y: -9.98377037, z: 14.9551516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,7 +239,7 @@ MonoBehaviour:
   - {fileID: 400006, guid: d497d581d7f017a4396175356909ee6c, type: 2}
   - {fileID: 400004, guid: d497d581d7f017a4396175356909ee6c, type: 2}
   - {fileID: 400002, guid: d497d581d7f017a4396175356909ee6c, type: 2}
-  SpawnPosition: {x: 0, y: 0, z: 0}
+  SpawnPosition: {x: 19, y: 0, z: 0}
   MinSpawnInterval: 5
   MaxSpawnInterval: 10
 --- !u!114 &11400002
@@ -298,6 +355,165 @@ MonoBehaviour:
   cameraDepth: -1000
   cameraRange: 2001
 --- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92593f201eef1e74e801c9b3ab49884e, type: 3}
+  m_Name: 
+  InitialWave: 1
+  InitialMoney: 100
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf791b8ec508eb4a94c7295007afe68, type: 3}
+  m_Name: 
+  _name: heart anims
+  _fps: 6
+  _duration: 2.5
+  framesets:
+  - name: Health
+    container: {fileID: 11400014}
+    startFrame: 0
+    endFrame: 1
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 2
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: heart comp
+  - name: Sick
+    container: {fileID: 11400014}
+    startFrame: 2
+    endFrame: 3
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 2
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 4
+    _containerName: heart comp
+  - name: MoreSick
+    container: {fileID: 11400014}
+    startFrame: 4
+    endFrame: 5
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 2
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 8
+    _containerName: heart comp
+  - name: Dead
+    container: {fileID: 11400014}
+    startFrame: 6
+    endFrame: 8
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 12
+    _containerName: heart comp
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
+  m_Name: 
+  _name: heart comp
+  _sheetSize: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: ad98ded1ecea64e4197c980db997b5bc, type: 3}
+  sizeTextures: []
+  atlasData:
+  - name: corazon1_1
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon1_2
+    position: {x: 420, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon2_1
+    position: {x: 838, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon2_2
+    position: {x: 1256, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon3_1
+    position: {x: 2, y: 420}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon3_2
+    position: {x: 420, y: 420}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon4_1
+    position: {x: 838, y: 420}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon4_2
+    position: {x: 1256, y: 420}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon_muerto
+    position: {x: 2, y: 838}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  offsetSizing: 1
+  metaType: 
+  metaData: []
+  _atlasDataFile: {fileID: 4900000, guid: a929250f31c4dfc47a4fae86aa04e50f, type: 3}
+  reloadData: 0
+  bytesDataFile: 4987
+  id: 8
+--- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}

@@ -1,7 +1,8 @@
 using UnityEngine;
 using System.Collections;
 
-public class GameState : MonoBehaviour {
+public class GameState : MonoBehaviour
+{
 
 	public enum Tower
 	{
@@ -14,23 +15,35 @@ public class GameState : MonoBehaviour {
     public int InitialWave = 1;
     public int InitialMoney = 100;
 
-    public static int WaveNumber { 
-        get; 
-        set; 
+    public static int WaveNumber
+    {
+        get;
+        set;
     }
 
-    public static int AvailableMoney { 
-        get; 
-        set; 
+    public static int AvailableMoney
+    {
+        get;
+        set;
     }
 
 	public static Tower TowerSelected { get; set; }
 
-    void Awake()
+    private void Awake()
     {
         WaveNumber = InitialWave;
         AvailableMoney = InitialMoney;
 
         DontDestroyOnLoad(this);
+    }
+
+    public static void LevelCompleted()
+    { 
+    
+    }
+
+    public static void GameOver()
+    { 
+    
     }
 }
