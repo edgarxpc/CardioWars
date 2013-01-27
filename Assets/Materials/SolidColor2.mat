@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: SolidColor
+  m_Name: SolidColor2
   m_Shader: {fileID: 7, guid: 0000000000000000e000000000000000, type: 0}
   m_SavedProperties:
     serializedVersion: 2
@@ -23,4 +23,4 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .425373137, g: .136500329, b: .136500329, a: 1}
+        second: {r: 1, g: 0, b: 0, a: 1}

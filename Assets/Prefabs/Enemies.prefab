@@ -8,7 +8,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400000}
-  - 114: {fileID: 11400024}
   m_Layer: 0
   m_Name: Enemies
   m_TagString: Untagged
@@ -27,7 +26,6 @@ GameObject:
   - 33: {fileID: 3300000}
   - 135: {fileID: 13500000}
   - 23: {fileID: 2300000}
-  - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400016}
@@ -49,7 +47,6 @@ GameObject:
   - 33: {fileID: 3300002}
   - 135: {fileID: 13500002}
   - 23: {fileID: 2300002}
-  - 114: {fileID: 11400006}
   - 54: {fileID: 5400002}
   - 114: {fileID: 11400004}
   - 114: {fileID: 11400018}
@@ -71,7 +68,6 @@ GameObject:
   - 33: {fileID: 3300004}
   - 135: {fileID: 13500004}
   - 23: {fileID: 2300004}
-  - 114: {fileID: 11400008}
   - 54: {fileID: 5400004}
   - 114: {fileID: 11400010}
   - 114: {fileID: 11400020}
@@ -93,7 +89,6 @@ GameObject:
   - 33: {fileID: 3300006}
   - 135: {fileID: 13500006}
   - 23: {fileID: 2300006}
-  - 114: {fileID: 11400014}
   - 54: {fileID: 5400006}
   - 114: {fileID: 11400012}
   - 114: {fileID: 11400022}
@@ -111,7 +106,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 15.53123, y: 14.1994534, z: -50.77034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -175,7 +170,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 528b27139ce341a4392c630adfa65a5e, type: 2}
+  - {fileID: 2100000, guid: 420927024de02174e9e0256d6bfe990a, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -193,7 +188,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 528b27139ce341a4392c630adfa65a5e, type: 2}
+  - {fileID: 2100000, guid: d0192fa59c80147449b6ec322da158ca, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -229,7 +224,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 528b27139ce341a4392c630adfa65a5e, type: 2}
+  - {fileID: 2100000, guid: c3537af82584bc2409456e13006c88bc, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -323,17 +318,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100002}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de1bf6e5fa25a0d4b856bf6e737e3c1d, type: 3}
-  m_Name: 
-  Target: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -420,28 +404,6 @@ MonoBehaviour:
   startOnVert: 0
   KeyControl: 1
   pauseTime: 0
---- !u!114 &11400006
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100004}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de1bf6e5fa25a0d4b856bf6e737e3c1d, type: 3}
-  m_Name: 
-  Target: {fileID: 0}
---- !u!114 &11400008
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100006}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de1bf6e5fa25a0d4b856bf6e737e3c1d, type: 3}
-  m_Name: 
-  Target: {fileID: 0}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -528,17 +490,6 @@ MonoBehaviour:
   startOnVert: 0
   KeyControl: 1
   pauseTime: 0
---- !u!114 &11400014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de1bf6e5fa25a0d4b856bf6e737e3c1d, type: 3}
-  m_Name: 
-  Target: {fileID: 0}
 --- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -591,19 +542,6 @@ MonoBehaviour:
   Money: 5
   InitialHP: 10
   RecoveryAmmount: 100
---- !u!114 &11400024
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9bb58608a0960b48bf7f2f41a8ac535, type: 3}
-  m_Name: 
-  Money: 0
-  InitialHP: 0
-  RecoveryAmmount: 0
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1

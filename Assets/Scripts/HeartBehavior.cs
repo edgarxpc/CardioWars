@@ -7,7 +7,7 @@ public class HeartBehavior : MonoBehaviour
     public OTAnimatingSprite Sprite;
     public int InitialHP = 2000;
     public int HealthDecrement = 85;
-    public float AttackInterval = 5f;
+    public float AttackInterval = 8f;
     
     private int currentHP;
     private float heartBeatInterval;
