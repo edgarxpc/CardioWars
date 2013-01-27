@@ -18,16 +18,25 @@ public class BulletBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.movementDirection = this.target.transform.position - this.transform.position;
-		this.transform.position += this.movementDelta * this.movementDirection;
+		if ((this.gameObject != null) && (this.target != null))
+		{
+			this.movementDirection = this.target.transform.position - this.transform.position;
+			this.transform.position += this.movementDelta * this.movementDirection;
+		}
+		else
+		{
+			Destroy(this.gameObject);
+		}
 	}
 
 	void OnTriggerEnter(Collider collider) {
-		if (collider.GetComponent<Rigidbody>() == target.GetComponent<Rigidbody>())
+		if ((this.gameObject != null) && (this.target != null))
 		{
-
-			GameState.Audio.playShootTumor();
-			Destroy(this.gameObject);
+			if (collider.GetComponent<Rigidbody>() == target.GetComponent<Rigidbody>())
+			{
+				GameState.Audio.playShootTumor();
+				Destroy(this.gameObject);
+			}
 		}
 	}
 }

@@ -30,7 +30,6 @@ public class TowerBehavior : MonoBehaviour {
 				this.timeBeforeNextFire -= Time.deltaTime;
 			}
 		}
-		
 	}
 	
 	void OnTriggerEnter(Collider collider) {
