@@ -13,6 +13,7 @@ public class EnemyBehavior : MonoBehaviour {
 	void Update () {
 		if (this.hp <= 0)
 		{
+			GameState.AvailableMoney += Money;
 			Destroy(this.gameObject);
 		}
 	}
@@ -21,7 +22,6 @@ public class EnemyBehavior : MonoBehaviour {
 		BulletBehavior bulletBehavior = collider.GetComponent<BulletBehavior>();
 		if (bulletBehavior != null)
 		{
-			GameState.AvailableMoney += Money;
 			this.hp -= bulletBehavior.damage;
 		}
 	}
