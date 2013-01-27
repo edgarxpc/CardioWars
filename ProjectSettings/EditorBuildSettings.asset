@@ -13,3 +13,5 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOverBad.unity
   - enabled: 1
     path: Assets/Scenes/GameOverGood.unity
+  - enabled: 1
+    path: Assets/Scenes/GameOverBadBoss.unity
