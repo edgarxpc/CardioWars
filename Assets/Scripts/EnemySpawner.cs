@@ -52,15 +52,15 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnNext()
     {     
-        int typeIndex = 0;
+        int typeIndex = 2;
         int typeRange = Random.Range(0, 100);
-        if (typeRange > (parameters.EnemyWeights[0]))
+        if (typeRange > (parameters.EnemyWeights[0] + parameters.EnemyWeights[1]))
         {
             typeIndex = 1;
         }
-        else if (typeRange > (parameters.EnemyWeights[0] + parameters.EnemyWeights[1]))
+        else if (typeRange > (parameters.EnemyWeights[0]))
         {
-            typeIndex = 2;
+            typeIndex = 0;
         }
 
         Transform enemy = (Transform)Instantiate(Enemies[typeIndex], SpawnPosition, Quaternion.identity);
