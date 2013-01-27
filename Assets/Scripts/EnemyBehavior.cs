@@ -2,6 +2,9 @@ using UnityEngine;
 using System.Collections;
 
 public class EnemyBehavior : MonoBehaviour {
+
+	public int Money;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -18,6 +21,7 @@ public class EnemyBehavior : MonoBehaviour {
 		BulletBehavior bulletBehavior = collider.GetComponent<BulletBehavior>();
 		if (bulletBehavior != null)
 		{
+			GameState.AvailableMoney += Money;
 			this.hp -= bulletBehavior.damage;
 		}
 	}
