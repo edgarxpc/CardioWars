@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: TowerBase
+  m_Name: EmptyTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,12 +63,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b795f5e0da992c34b946f2a7eafbc952, type: 3}
+  m_Script: {fileID: 11500000, guid: 1ab35311f19133e4f9a5bdedb597c475, type: 3}
   m_Name: 
-  bullet: {fileID: 100000, guid: f102feee64a4f4f4b92a1172ac47b06f, type: 2}
-  missile: {fileID: 0}
-  attackRange: 0
-  damage: 0
+  objCholesterolTower: {fileID: 100006, guid: ae4b43214defaae4795ead457df70b2d, type: 2}
+  objWormTower: {fileID: 100002, guid: ae4b43214defaae4795ead457df70b2d, type: 2}
+  objTumorTower: {fileID: 100000, guid: ae4b43214defaae4795ead457df70b2d, type: 2}
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -76,7 +75,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: .5
