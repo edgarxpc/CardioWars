@@ -74,6 +74,42 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!21 &471344192
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: OTMaterial-transparent
+  m_Shader: {fileID: 10721, guid: 0000000000000000f000000000000000, type: 0}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: ad98ded1ecea64e4197c980db997b5bc, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _InvFade
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _EmisColor
+        second: {r: .200000003, g: .200000003, b: .200000003, a: 0}
+      data:
+        first:
+          name: _TintColor
+        second: {r: .5, g: .5, b: .5, a: .5}
 --- !u!1 &484758387
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,8 +134,366 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -276.670624, y: 15.0754004, z: 17.6875}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 534222464}
   m_Father: {fileID: 1310558680}
+--- !u!1 &534222462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+  m_PrefabInternal: {fileID: 1912997113}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 534222464}
+  - 114: {fileID: 534222463}
+  m_Layer: 0
+  m_Name: heart anims
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &534222463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839,
+    type: 2}
+  m_PrefabInternal: {fileID: 1912997113}
+  m_GameObject: {fileID: 534222462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf791b8ec508eb4a94c7295007afe68, type: 3}
+  m_Name: 
+  _name: heart anims
+  _fps: 9
+  _duration: 1
+  framesets:
+  - name: Health
+    container: {fileID: 1492542693}
+    startFrame: 0
+    endFrame: 1
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: heart comp
+  - name: Sick
+    container: {fileID: 1492542693}
+    startFrame: 2
+    endFrame: 3
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 2
+    _containerName: heart comp
+  - name: More Sick
+    container: {fileID: 1492542693}
+    startFrame: 4
+    endFrame: 5
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 4
+    _containerName: heart comp
+  - name: Dying
+    container: {fileID: 1492542693}
+    startFrame: 6
+    endFrame: 7
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 6
+    _containerName: heart comp
+  - name: Dead
+    container: {fileID: 1492542693}
+    startFrame: 8
+    endFrame: 8
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 8
+    _containerName: heart comp
+--- !u!4 &534222464
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+  m_PrefabInternal: {fileID: 1912997113}
+  m_GameObject: {fileID: 534222462}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 276.670624, y: -15.0754004, z: -17.6875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 484758388}
+--- !u!1 &727553904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+  m_PrefabInternal: {fileID: 1320006335}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 727553908}
+  - 33: {fileID: 727553907}
+  - 23: {fileID: 727553906}
+  - 114: {fileID: 727553905}
+  m_Layer: 0
+  m_Name: heart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &727553905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04,
+    type: 2}
+  m_PrefabInternal: {fileID: 1320006335}
+  m_GameObject: {fileID: 727553904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0774980171c514ea93208b47048a0c, type: 3}
+  m_Name: 
+  _name: heart
+  _position: {x: 1, y: 1}
+  _size: {x: 416, y: 416}
+  _rotation: 0
+  _pivot: 4
+  _pivotPoint: {x: 0, y: 0}
+  _registerInput: 0
+  _depth: 0
+  _collidable: 0
+  _physics: 0
+  _colliderType: 0
+  _collisionDepth: 0
+  _collisionSize: .400000006
+  draggable: 0
+  dragButton: 0
+  init: 0
+  _worldBounds:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  protoType: 
+  baseName: heart
+  oSize: {x: 13, y: 13}
+  imageSize: {x: 416, y: 416}
+  _offset: {x: 0, y: 0}
+  _baseOffset: {x: 0, y: 0}
+  _flipHorizontal: 0
+  _flipVertical: 0
+  _transparent: 1
+  _additive: 0
+  _materialReference: transparent
+  _tintColor: {r: 1, g: 1, b: 1, a: 1}
+  _alpha: 1
+  _image: {fileID: 0}
+  sizeImages: []
+  _frameIndex: 0
+  _frameName: corazon1_1
+  _spriteContainer: {fileID: 1492542693}
+  _containerName: heart comp
+  _newSprite: 0
+  _animation: {fileID: 534222463}
+  _animationFrameset: 
+  _speed: 1
+  _looping: 1
+  _numberOfPlays: -1
+  _playOnStart: 1
+  _startAtRandomFrame: 0
+  _destroyWhenFinished: 0
+  animationPreview: 0
+  _animationName: heart anims
+--- !u!23 &727553906
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 2300000, guid: 6990eac78afc3924fbf55b3744ffcd04,
+    type: 2}
+  m_PrefabInternal: {fileID: 1320006335}
+  m_GameObject: {fileID: 727553904}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 471344192}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+--- !u!33 &727553907
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 3300000, guid: 6990eac78afc3924fbf55b3744ffcd04,
+    type: 2}
+  m_PrefabInternal: {fileID: 1320006335}
+  m_GameObject: {fileID: 727553904}
+  m_Mesh: {fileID: 1011675906}
+--- !u!4 &727553908
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+  m_PrefabInternal: {fileID: 1320006335}
+  m_GameObject: {fileID: 727553904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1, y: 1, z: .000899999985}
+  m_LocalScale: {x: 416, y: 416, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!43 &1011675906
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: .5, y: .5, z: 0}
+  m_MeshCompression: 0
+  m_StreamCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexBuffer: 000001000200020003000000
+  m_Skin: []
+  m_BindPose: []
+  m_VertexData:
+    m_CurrentChannels: 15
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 24
+      format: 2
+      dimension: 1
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_Streams:
+    - channelMask: 15
+      offset: 0
+      stride: 36
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    - channelMask: 0
+      offset: 0
+      stride: 0
+      dividerOp: 0
+      frequency: 0
+    m_DataSize: 144
+    _typelessdata: 000000bf0000003f000000000000000000000000000080bfffffffff0000003b00807f3f0000003f0000003f000000000000000000000000000080bfffffffff0000d13e00807f3f0000003f000000bf000000000000000000000000000080bfffffffff0000d13e0080173f000000bf000000bf000000000000000000000000000080bfffffffff0000003b0080173f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BindPoses:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Colors:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: .5, y: .5, z: 0}
+  m_MeshUsageFlags: 0
+  m_MeshOptimized: 0
 --- !u!1001 &1129138296
 Prefab:
   m_ObjectHideFlags: 0
@@ -338,6 +732,146 @@ Transform:
   - {fileID: 1450224817}
   - {fileID: 2144809103}
   m_Father: {fileID: 1336080756}
+--- !u!1001 &1320006335
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: .000899999985
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _name
+      value: heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _collisionSize
+      value: .400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: init
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: oSize.x
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: oSize.y
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 471344192}
+    - target: {fileID: 3300000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1011675906}
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_Name
+      value: heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: baseName
+      value: heart
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _animation
+      value: 
+      objectReference: {fileID: 534222463}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: imageSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: imageSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _frameName
+      value: corazon1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _spriteContainer
+      value: 
+      objectReference: {fileID: 1492542693}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _containerName
+      value: heart comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _newSprite
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _animationName
+      value: heart anims
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _playOnStart
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _position.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+      propertyPath: _position.y
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6990eac78afc3924fbf55b3744ffcd04, type: 2}
+  m_RootGameObject: {fileID: 727553904}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1336080755
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,6 +881,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1336080756}
   - 114: {fileID: 1336080757}
+  - 114: {fileID: 1336080758}
   m_Layer: 0
   m_Name: LevelBase
   m_TagString: Untagged
@@ -385,6 +920,19 @@ MonoBehaviour:
   SpawnPosition: {x: 0, y: 0, z: 0}
   MinSpawnInterval: 5
   MaxSpawnInterval: 10
+--- !u!114 &1336080758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400010, guid: 35c031ef8c00cfb4ea0b5de386bf17ca,
+    type: 2}
+  m_PrefabInternal: {fileID: 1129138296}
+  m_GameObject: {fileID: 1336080755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92593f201eef1e74e801c9b3ab49884e, type: 3}
+  m_Name: 
+  InitialWave: 1
+  InitialMoney: 100
 --- !u!1 &1450224816
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,6 +959,119 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1310558680}
+--- !u!1 &1492542691
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+  m_PrefabInternal: {fileID: 1742097965}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1492542692}
+  - 114: {fileID: 1492542693}
+  m_Layer: 0
+  m_Name: heart comp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1492542692
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+  m_PrefabInternal: {fileID: 1742097965}
+  m_GameObject: {fileID: 1492542691}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.1866798, y: -14.8388662, z: 14.9551516}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1562789258}
+--- !u!114 &1492542693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4,
+    type: 2}
+  m_PrefabInternal: {fileID: 1742097965}
+  m_GameObject: {fileID: 1492542691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
+  m_Name: 
+  _name: heart comp
+  _sheetSize: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: ad98ded1ecea64e4197c980db997b5bc, type: 3}
+  sizeTextures: []
+  atlasData:
+  - name: corazon1_1
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon1_2
+    position: {x: 420, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon2_1
+    position: {x: 838, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon2_2
+    position: {x: 1256, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon3_1
+    position: {x: 2, y: 420}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon3_2
+    position: {x: 420, y: 420}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon4_1
+    position: {x: 838, y: 420}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon4_2
+    position: {x: 1256, y: 420}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  - name: corazon5_1
+    position: {x: 2, y: 838}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 416, y: 416}
+    frameSize: {x: 416, y: 416}
+    metaData: []
+  offsetSizing: 1
+  metaType: 
+  metaData: []
+  _atlasDataFile: {fileID: 4900000, guid: a929250f31c4dfc47a4fae86aa04e50f, type: 3}
+  reloadData: 0
+  bytesDataFile: 4983
+  id: 1
 --- !u!1 &1562789257
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,8 +1096,521 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 21.1866798, y: 14.8388662, z: -14.9551516}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1492542692}
   m_Father: {fileID: 1310558680}
+--- !u!1001 &1742097965
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1562789258}
+    m_Modifications:
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -21.1866798
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -14.8388662
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 14.9551516
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: _name
+      value: heart comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: m_Name
+      value: heart comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: texture
+      value: 
+      objectReference: {fileID: 2800000, guid: ad98ded1ecea64e4197c980db997b5bc, type: 3}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[0].name
+      value: corazon1_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[0].position.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[0].position.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[0].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[0].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[0].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[0].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[1].name
+      value: corazon1_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[1].position.x
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[1].position.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[1].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[1].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[1].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[1].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[2].name
+      value: corazon2_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[2].position.x
+      value: 838
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[2].position.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[2].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[2].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[2].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[2].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[3].name
+      value: corazon2_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[3].position.x
+      value: 1256
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[3].position.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[3].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[3].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[3].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[3].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[4].name
+      value: corazon3_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[4].position.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[4].position.y
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[4].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[4].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[4].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[4].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[5].name
+      value: corazon3_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[5].position.x
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[5].position.y
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[5].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[5].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[5].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[5].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[6].name
+      value: corazon4_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[6].position.x
+      value: 838
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[6].position.y
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[6].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[6].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[6].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[6].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[7].name
+      value: corazon4_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[7].position.x
+      value: 1256
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[7].position.y
+      value: 420
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[7].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[7].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[7].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[7].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].name
+      value: corazon5_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].position.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].position.y
+      value: 838
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].size.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].size.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].frameSize.x
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: atlasData.Array.data[8].frameSize.y
+      value: 416
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: _atlasDataFile
+      value: 
+      objectReference: {fileID: 4900000, guid: a929250f31c4dfc47a4fae86aa04e50f, type: 3}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: bytesDataFile
+      value: 4983
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+      propertyPath: id
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9b3c86c20b0b56c4993ef04c40115bf4, type: 2}
+  m_RootGameObject: {fileID: 1492542691}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1001 &1912997113
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 484758388}
+    m_Modifications:
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 276.670624
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -15.0754004
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -17.6875
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: _name
+      value: heart anims
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: m_Name
+      value: heart anims
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: _fps
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[0].name
+      value: Health
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[0].startFrame
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[0].endFrame
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[0].playCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[1].startFrame
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[1].endFrame
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[1].playCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[1].startIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[2].startFrame
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[2].endFrame
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[2].playCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[2].startIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[3].startFrame
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[3].endFrame
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[3].playCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[3].startIndex
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[4].startFrame
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[4].endFrame
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[4].playCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[4].startIndex
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[0].container
+      value: 
+      objectReference: {fileID: 1492542693}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[0]._containerName
+      value: heart comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[1].name
+      value: Sick
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[1].container
+      value: 
+      objectReference: {fileID: 1492542693}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[1]._containerName
+      value: heart comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[2].name
+      value: More Sick
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[2].container
+      value: 
+      objectReference: {fileID: 1492542693}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[2]._containerName
+      value: heart comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[3].name
+      value: Dying
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[3].container
+      value: 
+      objectReference: {fileID: 1492542693}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[3]._containerName
+      value: heart comp
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[4].name
+      value: Dead
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[4].container
+      value: 
+      objectReference: {fileID: 1492542693}
+    - target: {fileID: 11400000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+      propertyPath: framesets.Array.data[4]._containerName
+      value: heart comp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d15cc9386cefe3a4887d6194eee4a839, type: 2}
+  m_RootGameObject: {fileID: 534222462}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &2144809102
 GameObject:
   m_ObjectHideFlags: 0
