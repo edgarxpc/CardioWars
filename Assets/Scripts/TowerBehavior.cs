@@ -17,6 +17,13 @@ public class TowerBehavior : MonoBehaviour {
 	public float fireRateOnSeconds = 0.5f;	
 	private float timeBeforeNextFire = 0.0f;
 	
+<<<<<<< HEAD
+=======
+	void Start()
+	{
+		//Sprite.Play("Walk");
+	}
+>>>>>>> b2d5d79e932abf5381530c5a58a41d588feec20c
 	// Update is called once per frame
 	void Update () {
 		// Reload
