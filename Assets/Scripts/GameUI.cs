@@ -9,6 +9,10 @@ public class GameUI : MonoBehaviour
 	public Texture btnTower1 = null;
 	public Texture btnTower2 = null;
 	public Texture btnTower3 = null;
+	
+	public GUIStyle styleTower1 = new GUIStyle();
+	public GUIStyle styleTower2 = new GUIStyle();
+	public GUIStyle styleTower3 = new GUIStyle();	
 
 	public GUIText scoreMoney;
 
@@ -33,20 +37,19 @@ public class GameUI : MonoBehaviour
 			scoreMoney.text = strMoney;
 		}
 		
-
-		if (GUI.Button(new Rect(5, 5, 74, 74), btnTower1))
-		{
-			GameState.TowerSelected = GameState.Tower.Worm;
-//			Debug.Log(string.Format("Hit tower {0}", GameState.Tower.Cholesterol.ToString()));
-		}
-		else if (GUI.Button(new Rect(84, 5, 74, 74), btnTower2))
+		if (GUI.Button(new Rect(5, 5, 74, 74), "",styleTower1))
 		{
 			GameState.TowerSelected = GameState.Tower.Cholesterol;
-//			Debug.Log(string.Format("Hit tower {0}", GameState.Tower.Tumor.ToString()));
+//			Debug.Log(string.Format("Hit tower {0}", GameState.Tower.Cholesterol.ToString()));
 		}
-		else if (GUI.Button(new Rect(163, 5, 74, 74), btnTower3))
+		else if (GUI.Button(new Rect(84, 5, 74, 74), "",styleTower2))
 		{
 			GameState.TowerSelected = GameState.Tower.Tumor;
+//			Debug.Log(string.Format("Hit tower {0}", GameState.Tower.Tumor.ToString()));
+		}
+		else if (GUI.Button(new Rect(163, 5, 74, 74), "",styleTower3))
+		{
+			GameState.TowerSelected = GameState.Tower.Worm;
 //			Debug.Log(string.Format("Hit tower {0}", GameState.Tower.Worm.ToString()));
 		}
 		else
@@ -58,6 +61,7 @@ public class GameUI : MonoBehaviour
 	void OnGUI()
 	{
 		GUI.skin = skin;
+//		Debug.Log("LoadingGUI");
 		loadGUIPlay();
 	}
 }
