@@ -2,7 +2,9 @@ using UnityEngine;
 using System.Collections;
 
 public class TowerBehavior : MonoBehaviour {
-	
+
+    public OTAnimatingSprite Sprite;
+
 	// Target and bullets
 	public GameObject bullet;
 	public GameObject missile;
@@ -14,13 +16,7 @@ public class TowerBehavior : MonoBehaviour {
 	// Fire rate vars
 	public float fireRateOnSeconds = 0.5f;	
 	private float timeBeforeNextFire = 0.0f;
-	public OTAnimatingSprite Sprite;
 	
-	
-	void Start()
-	{
-		Sprite.Play("Walk");
-	}
 	// Update is called once per frame
 	void Update () {
 		// Reload
@@ -30,6 +26,7 @@ public class TowerBehavior : MonoBehaviour {
 			if (this.timeBeforeNextFire <= 0.0f)
 			{
 				this.collider.enabled = true;
+                Sprite.PlayOnce("Idle");
 			}
 			else
 			{
@@ -39,6 +36,7 @@ public class TowerBehavior : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider collider) {
+       
 		EnemyBehavior enemyBehavior = collider.GetComponent<EnemyBehavior>();
 		if (enemyBehavior != null)
 		{
@@ -47,7 +45,8 @@ public class TowerBehavior : MonoBehaviour {
 			
 			// Disable collision. Enable when bullet dies.
 			this.collider.enabled = false;
-			
+            Sprite.PlayLoop("Attack");
+
 			// Create bullet
 			GameObject firedBullet = (GameObject) Instantiate (this.bullet, this.transform.position, Quaternion.identity);
 			firedBullet.GetComponent<BulletBehavior>().target = collider.gameObject;

@@ -228,6 +228,102 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &100028
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400028}
+  - 114: {fileID: 11400036}
+  m_Layer: 0
+  m_Name: tower3 anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100030
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400030}
+  - 114: {fileID: 11400038}
+  m_Layer: 0
+  m_Name: tower2 anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100032
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400032}
+  - 114: {fileID: 11400040}
+  m_Layer: 0
+  m_Name: tower1 anim
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100034
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400034}
+  - 114: {fileID: 11400042}
+  m_Layer: 0
+  m_Name: tower2 comp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100036
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400036}
+  - 114: {fileID: 11400044}
+  m_Layer: 0
+  m_Name: tower3 comp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100038
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400038}
+  - 114: {fileID: 11400046}
+  m_Layer: 0
+  m_Name: tower1 comp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -279,6 +375,9 @@ Transform:
   - {fileID: 400014}
   - {fileID: 400020}
   - {fileID: 400024}
+  - {fileID: 400038}
+  - {fileID: 400034}
+  - {fileID: 400036}
   - {fileID: 400022}
   m_Father: {fileID: 400004}
 --- !u!4 &400008
@@ -305,6 +404,9 @@ Transform:
   - {fileID: 400012}
   - {fileID: 400026}
   - {fileID: 400018}
+  - {fileID: 400032}
+  - {fileID: 400030}
+  - {fileID: 400028}
   - {fileID: 400016}
   m_Father: {fileID: 400004}
 --- !u!4 &400012
@@ -395,6 +497,72 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400010}
+--- !u!4 &400028
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+--- !u!4 &400030
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+--- !u!4 &400032
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+--- !u!4 &400034
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+--- !u!4 &400036
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+--- !u!4 &400038
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -534,7 +702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92593f201eef1e74e801c9b3ab49884e, type: 3}
   m_Name: 
   InitialWave: 1
-  InitialMoney: 100
+  InitialMoney: 1000
 --- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -892,6 +1060,7 @@ MonoBehaviour:
   ShootWorm: {fileID: 8300000, guid: cbcbfae92a879e148ae933c083f681a8, type: 3}
   ShootTumor: {fileID: 8300000, guid: 65aeacf63eedc0f40809299be415d963, type: 3}
   Source: {fileID: 0}
+  SceneWin: {fileID: 0}
 --- !u!114 &11400020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2105,6 +2274,451 @@ MonoBehaviour:
     singleDuration: 0
     startIndex: 12
     _containerName: o2 comp
+--- !u!114 &11400036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf791b8ec508eb4a94c7295007afe68, type: 3}
+  m_Name: 
+  _name: tower3 anim
+  _fps: 12
+  _duration: 1
+  framesets:
+  - name: Attack
+    container: {fileID: 11400044}
+    startFrame: 0
+    endFrame: 11
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: tower3 comp
+--- !u!114 &11400038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf791b8ec508eb4a94c7295007afe68, type: 3}
+  m_Name: 
+  _name: tower2 anim
+  _fps: 15
+  _duration: 1
+  framesets:
+  - name: Attack
+    container: {fileID: 11400042}
+    startFrame: 0
+    endFrame: 14
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: tower2 comp
+--- !u!114 &11400040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf791b8ec508eb4a94c7295007afe68, type: 3}
+  m_Name: 
+  _name: tower1 anim
+  _fps: 16
+  _duration: 1
+  framesets:
+  - name: Attack
+    container: {fileID: 11400046}
+    startFrame: 0
+    endFrame: 15
+    frameNames: []
+    frameNameMask: 
+    sortFrameNames: 0
+    playCount: 1
+    pingPong: 0
+    singleDuration: 0
+    startIndex: 0
+    _containerName: tower1 comp
+--- !u!114 &11400042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
+  m_Name: 
+  _name: tower2 comp
+  _sheetSize: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: 62c1da6cee3752f4a84821bab4ca8a75, type: 3}
+  sizeTextures: []
+  atlasData:
+  - name: torre20001
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20002
+    position: {x: 68, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20003
+    position: {x: 134, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20004
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20005
+    position: {x: 68, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20006
+    position: {x: 134, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20007
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20008
+    position: {x: 68, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20009
+    position: {x: 134, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20010
+    position: {x: 2, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20011
+    position: {x: 68, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20012
+    position: {x: 134, y: 200}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20013
+    position: {x: 2, y: 266}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20014
+    position: {x: 68, y: 266}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre20015
+    position: {x: 134, y: 266}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  offsetSizing: 1
+  metaType: 
+  metaData: []
+  _atlasDataFile: {fileID: 4900000, guid: 70841da5b7659324c99b838270cdebd6, type: 3}
+  reloadData: 0
+  bytesDataFile: 7719
+  id: 1
+--- !u!114 &11400044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
+  m_Name: 
+  _name: tower3 comp
+  _sheetSize: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: 6d2371fb4b34f0f42a258ec5e8a567b3, type: 3}
+  sizeTextures: []
+  atlasData:
+  - name: torre30001
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30002
+    position: {x: 68, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30003
+    position: {x: 134, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30004
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30005
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30006
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30007
+    position: {x: 68, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30008
+    position: {x: 68, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30009
+    position: {x: 134, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30010
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30011
+    position: {x: 68, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre30012
+    position: {x: 134, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  offsetSizing: 1
+  metaType: 
+  metaData: []
+  _atlasDataFile: {fileID: 4900000, guid: 2e881396b0c44574a98b83a459fc070d, type: 3}
+  reloadData: 0
+  bytesDataFile: 6316
+  id: 1
+--- !u!114 &11400046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd220758bd0b8b4685199267909af83, type: 3}
+  m_Name: 
+  _name: tower1 comp
+  _sheetSize: {x: 0, y: 0}
+  texture: {fileID: 2800000, guid: 1690edd2153cad24d9c17fe87f785d36, type: 3}
+  sizeTextures: []
+  atlasData:
+  - name: torre10001
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10002
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10003
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10004
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10005
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10006
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10007
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10008
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10009
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10010
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10011
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10012
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10013
+    position: {x: 2, y: 134}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10014
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10015
+    position: {x: 2, y: 68}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  - name: torre10016
+    position: {x: 2, y: 2}
+    offset: {x: 0, y: 0}
+    rotated: 0
+    size: {x: 64, y: 64}
+    frameSize: {x: 64, y: 64}
+    metaData: []
+  offsetSizing: 1
+  metaType: 
+  metaData: []
+  _atlasDataFile: {fileID: 4900000, guid: faf0625efa368de4fa904639cf87e959, type: 3}
+  reloadData: 0
+  bytesDataFile: 8168
+  id: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
