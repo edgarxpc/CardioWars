@@ -11,10 +11,9 @@ GameObject:
   - 33: {fileID: 3300000}
   - 135: {fileID: 13500000}
   - 23: {fileID: 2300000}
-  - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: EnemyBase
+  m_Name: Heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -8.41689014, y: .671303928, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -43,7 +42,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 528b27139ce341a4392c630adfa65a5e, type: 2}
+  - {fileID: 10302, guid: 0000000000000000e000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -56,21 +55,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!54 &5400000
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: .0500000007
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -79,41 +63,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65e104717ca520149adde8a337ab7b9c, type: 3}
+  m_Script: {fileID: 11500000, guid: 40005ce4e6928ab46bd56cea95ce88a3, type: 3}
   m_Name: 
-  advancedMode: 0
-  mode: 2
-  looseFollow: 0
-  snapDistance: .100000001
-  airForce: 10
-  maxAirSpeed: 8
-  runForce: 10
-  maxRunSpeed: 10
-  stopForce: 60
-  coastForce: 8
-  stopThresh: 2
-  gravityForce: -25
-  jumpVelocity: 11
-  horizAcceleration: 0
-  horizSpeed: 2
-  predictionLength: 80
-  predictionStep: 5
-  gravSpline: {fileID: 0}
-  currentSpline: {fileID: 0}
-  startVert: 0
-  rotationDamping: 10
-  gravNode: {fileID: 0}
-  groundNode: {fileID: 0}
-  hoverOffset: {x: 0, y: 0, z: 0}
-  dragSplinePosition: {x: 0, y: 0, z: 0}
-  goInReverse: 0
-  reverseOrientation: 0
-  go: 1
-  ignoreNodes: 0
-  ignoreNextNode: 0
-  startOnVert: 0
-  KeyControl: 1
-  pauseTime: 0
 --- !u!135 &13500000
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -121,7 +72,7 @@ SphereCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: .5
